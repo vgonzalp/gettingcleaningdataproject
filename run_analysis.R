@@ -1,7 +1,7 @@
 library(dplyr)
 #link and download file
 SamsungUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(SamsungUrl, destfile = "./datos/dataset.zip", method = "curl")
+download.file(SamsungUrl, destfile = "dataset.zip", method = "curl")
 unzip("dataset.zip")
 #load general data sets
 etiquetas <- read.csv("./UCI HAR Dataset/features.txt", header = FALSE, sep = " ")
